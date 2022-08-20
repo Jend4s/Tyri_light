@@ -165,4 +165,4 @@ Temperature of NEW pcb was measured on critical places like XL6006, inductor, LE
 <br/>
 
 # Conclusion
- What say in conclusion? This project was basically spontaneous idea. Because i have this light in my inventory after repair but the light of original LEDs were so weak so i don´t used it. After a year or so i made some cleanup in workshop and i found them. So i made this little project. All this was made in two sleepless nights. In last words i must thanks to [JLCPCB](https://jlcpcb.com/) for quality PCB´s and [LCSC](https://lcsc.com/) for all components.
+ What say in conclusion? This project was basically spontaneous idea. Because i have this light in my inventory after repair but the emitted light of original LEDs were so weak so i don´t used it. After a year or so i made some cleanup in workshop and i found them. So i made this little project. All this was made in two sleepless nights. In last words i must thanks to [JLCPCB](https://jlcpcb.com/) for quality PCB´s and [LCSC](https://lcsc.com/) for all components.
