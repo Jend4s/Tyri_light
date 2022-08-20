@@ -1,6 +1,6 @@
 # Tyri_light
 This project is about replacing original electronic in Tyri light composed from LEDs 1010 with own LED driver based on XLsemi IC named XL6006 and 20/30W power LED. 
-Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [HW](https://github.com/Joint1k/Tyri_light/tree/main/hw). Photos of design, production and final product are in pics folder. 
+Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [hw](https://github.com/Joint1k/Tyri_light/tree/main/hw). Photos of design, production and final product are in [pics](https://github.com/Joint1k/Tyri_light/tree/main/pics) folder. 
 
 # Main components
 ## XL6006
@@ -22,7 +22,9 @@ $$I_{LED} = \frac{0.22}{RS}$$
 It is classical powerfull LED with COB chip. Nominal power depends on type, but used LED is 20 or 30 W which is about 1800 to 3000 lumens.
 
 # Own design
-Whole DC/DC current regulator is designed for 20 W LED so the _RS_ resistor is around 360 $m\Omega$. It is a possible use a 30 W LED but that is **NOT** tested yet and it is required change the _RS_ resistor to lower resistance around 250 $m\Omega$. Under the XL6006 is no solder mask so here is a naked polygon with HASL. Function of this naked area is the heatsink for the DC/DC regulator. So it is need to place here a thermal paste or silicone pad. And beware this polygon is connected to the _SW_ pin of the regulator so don´t shorted with the GND or another pin otherwise whole DC/DC regulator can be irretrievably damaged.
+Whole DC/DC current regulator is designed for 20 W LED so the _RS_ resistor is around 360 $m\Omega$. It is a possible use a 30 W LED ~~but that is **NOT** tested yet~~ and it is required change the _RS_ resistor to lower resistance around 250 $m\Omega$. Under the XL6006 is no solder mask so here is a naked polygon with HASL. Function of this naked area is the heatsink for the DC/DC regulator. So it is need to place here a thermal paste or silicone pad. And beware this polygon is connected to the _SW_ pin of the regulator so don´t shorted with the GND or another pin otherwise whole DC/DC regulator can be irretrievably damaged.
+
+And why pcb´s have white solder mask? Because light absorption which is little smaller than with green or other color.   
 
 # Tyri light
 <b>
@@ -97,7 +99,7 @@ Fig.1 - Tyri light
         </tr>
     </table>
             <p align = "center">
-            Fig.5 - TOP side of both PCB LEFT is original, RIGHT is new.
+            Fig.5 - TOP side of both PCB: LEFT is original, RIGHT is new.
             </p>  
 </div>
 <br/>
@@ -113,6 +115,52 @@ Fig.6 - Tyri light w/ instaled new PCB.
 <br/>
 
 # Measurements
-**!IN PROGRESS!**
+It was made some basic measurements for comparsion of old and new design for two voltages. Basically for 12 volts and then for 14 volt. Why for 14 V? Because this voltage is basically more commone in 12 V car electric system when engine running and car alternator starts charging carbattery and power all systems in car. New design is more energy consumption but on other hand is more powerfull light source then original. 
+
+## Power consuption:
+| Voltage (V) | ORIGINAL (A) | NEW (A) |
+| :---  |     :---: |      ---: |
+| 12 | 1.323 | 3.174 |
+| 14 | 1.106 | 2.580 |
+
+## Temperature @VSUP = 14V:
+
+| Time (min) | ORIGINAL (°C) | NEW (°C) |
+| :---  |     :---: |      ---: |
+| 0  | 25  | 25 |
+| 5  | 35  | 47 |
+| 10 | 40  | 54 |
+| 15 | 45  | 60 |
+
+Temperature of NEW pcb was measured on critical places like XL6006, inductor, LED, electrolytic capacitors and heatsink in 15th minute.
+
+| Component | Temp (°C) |
+| :---  |   :---: |
+| XL6006 | 60 | 
+| Inductor | 55 | 
+| Capacitors | 43 | 
+| LED | 60 | 
+| Heatsink | 58 | 
+
+<br/>
+<br/>
+<div id="image-table">
+    <table>
+	    <tr>
+    	    <td style="padding:10px">
+        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/OrigoLight.jpg?raw=true" width="400">
+      	    </td>
+            <td style="padding:10px">
+            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/NewLight.jpg?raw=true" width="400">
+            </td> 
+        </tr>
+    </table>
+            <p align = "center">
+            Fig.7 - Comparsion of both lights: LEFT is original, RIGHT is new. Distance 1.5 m from wall.
+            </p>  
+</div>
+<br/>
+<br/>
+
 # Conclusion
-**!IN PROGRESS!**
+ What say in conclusion? This project was basically spontaneous idea. Because i have this light in my inventory after repair but the light of original LEDs were so weak so i don´t used it. After a year or so i made some cleanup in workshop and i found them. So i made this little project. All this was made in two sleepless nights. In last words i must thanks to [JLCPCB](https://jlcpcb.com/) for quality PCB´s and [LCSC](https://lcsc.com/) for all components.
