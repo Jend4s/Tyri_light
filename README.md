@@ -111,8 +111,10 @@ Fig.1 - Tyri light
 <p align = "center">
 Fig.6 - Tyri light w/ instaled new PCB.
 </p>
+</b>
 <br/>
 <br/>
+</b>
 
 # Measurements
 It was made some basic measurements for comparsion of old and new design for two voltages. Basically for 12 volts and then for 14 volt. Why for 14 V? Because this voltage is basically more commone in 12 V car electric system when engine running and car alternator starts charging carbattery and power all systems in car. New design is more energy consumption but on other hand is more powerfull light source then original. 
