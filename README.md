@@ -16,6 +16,7 @@ That is circuit with OVP function which can limited output voltage with zener di
 $$V_{DZ} = {1.3 \cdot V{OUT}}$$
 
 The output current depend again on LED type and corect value is calculated from equation:
+
 $$I_{LED} = \frac{0.22}{RS}$$
 
 ## 20/30 W power LED
