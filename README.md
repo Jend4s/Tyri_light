@@ -1,6 +1,6 @@
 # Tyri_light
 This project is about replacing original electronic in Tyri light composed from LEDs 1010 with own LED driver based on XLsemi IC named XL6006 and 20/30W power LED. 
-Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [hw](https://github.com/Jend4s/Tyri_light/tree/main/hw). Photos of design, production and final product are in [pics](https://github.com/Joint1k/Tyri_light/tree/main/pics) folder. 
+Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [hw](https://github.com/Jend4s/Tyri_light/tree/main/hw). Photos of design, production and final product are in [pics](https://github.com/Jend4s/Tyri_light/tree/main/pics) folder. 
 
 # Main components
 ## XL6006
@@ -166,5 +166,3 @@ Temperature of NEW pcb was measured on critical places like XL6006, inductor, LE
 
 # Conclusion
  What say in conclusion? This project was basically spontaneous idea. Because i have this light in my inventory after repair but the emitted light of original LEDs were so weak so i don´t used it. After a year or so i made some cleanup in workshop and i found them. So i made this little project. All this was made in two sleepless nights. In last words i must thanks to [JLCPCB](https://jlcpcb.com/) for quality PCB´s and [LCSC](https://lcsc.com/) for all components.
- 
- 
