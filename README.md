@@ -1,14 +1,14 @@
 # Tyri_light
 This project is about replacing original electronic in Tyri light composed from LEDs 1010 with own LED driver based on XLsemi IC named XL6006 and 20/30W power LED. 
-Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [hw](https://github.com/Joint1k/Tyri_light/tree/main/hw). Photos of design, production and final product are in [pics](https://github.com/Joint1k/Tyri_light/tree/main/pics) folder. 
+Whole project is designed in [Altium Designer](https://www.altium.com/ "Altium Designer"). Schematic and pcb is in folder [hw](https://github.com/Jend4s/Tyri_light/tree/main/hw). Photos of design, production and final product are in [pics](https://github.com/Joint1k/Tyri_light/tree/main/pics) folder. 
 
 # Main components
 ## XL6006
-The XL6006 is fixed frequency (180kHz) PWM Boost (step-up) LED constant current regulator with wide input voltage range from 5 V to 32 V and maximum boost output, up to 60V. Maximal switching current capability, acocording to datasheet ([XL6006 datasheet](https://github.com/Joint1k/Tyri_light/tree/main/Datasheets/XL6006.pdf "XL6006 datasheet")) is 5 Amps. Regulator contains internal power MOSFET and build in Soft-Start function, Frequency compensation, Thermal shutdown function, and Current limit function. It is available in TO263-5L package.
+The XL6006 is fixed frequency (180kHz) PWM Boost (step-up) LED constant current regulator with wide input voltage range from 5 V to 32 V and maximum boost output, up to 60V. Maximal switching current capability, acocording to datasheet ([XL6006 datasheet](https://github.com/Jend4s/Tyri_light/tree/main/Datasheets/XL6006.pdf "XL6006 datasheet")) is 5 Amps. Regulator contains internal power MOSFET and build in Soft-Start function, Frequency compensation, Thermal shutdown function, and Current limit function. It is available in TO263-5L package.
 
 The electric wiring of the regulator is based on recommended datasheet schematic from page 9, figure 11: 
 <p align = "center">
-<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/schmdatasheet.png?raw=true" width="600">
+<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/schmdatasheet.png?raw=true" width="600">
 </p>
 
 That is circuit with OVP function which can limited output voltage with zener diode connected to the FB pin. Zener diode voltage is choosed by recommended LED voltage $\times 1.3$. So it is based on this equation:
@@ -29,7 +29,7 @@ And why pcb´s have white solder mask? Because light absorption which is little 
 # Tyri light
 <b>
 <p align = "center">
-<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/tyrilight1010.jpg?raw=true" width="600">
+<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/tyrilight1010.jpg?raw=true" width="600">
 </p>
 <p align = "center">
 Fig.1 - Tyri light
@@ -40,10 +40,10 @@ Fig.1 - Tyri light
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/3Dwithout2TOP.PNG?raw=true" width="400">
+        	    <img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/3Dwithout2TOP.PNG?raw=true" width="400">
       	    </td>
             <td style="padding:10px">
-            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/PCBwithoutTOP.png?raw=true" width="400">
+            	<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/PCBwithoutTOP.png?raw=true" width="400">
             </td> 
         </tr>
     </table>
@@ -57,10 +57,10 @@ Fig.1 - Tyri light
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/3Dwithout2BOT.PNG?raw=true" width="400">
+        	    <img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/3Dwithout2BOT.PNG?raw=true" width="400">
       	    </td>
             <td style="padding:10px">
-            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/PCBwithout2BOT.PNG?raw=true" width="400">
+            	<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/PCBwithout2BOT.PNG?raw=true" width="400">
             </td> 
         </tr>
     </table>
@@ -74,10 +74,10 @@ Fig.1 - Tyri light
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/3Dwith2.PNG?raw=true" width="400">
+        	    <img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/3Dwith2.PNG?raw=true" width="400">
       	    </td>
             <td style="padding:10px">
-            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/PCBwithTOP.png?raw=true" width="400">
+            	<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/PCBwithTOP.png?raw=true" width="400">
             </td> 
         </tr>
     </table>
@@ -91,10 +91,10 @@ Fig.1 - Tyri light
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/pcbOrigTOP.png?raw=true" width="400">
+        	    <img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/pcbOrigTOP.png?raw=true" width="400">
       	    </td>
             <td style="padding:10px">
-            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/PCBwithTOP.png?raw=true" width="400">
+            	<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/PCBwithTOP.png?raw=true" width="400">
             </td> 
         </tr>
     </table>
@@ -106,7 +106,7 @@ Fig.1 - Tyri light
 <br/>
 <b>
 <p align = "center">
-<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/TyriLightInstall.png?raw=true" width="600">
+<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/TyriLightInstall.png?raw=true" width="600">
 </p>
 <p align = "center">
 Fig.6 - Tyri light w/ instaled new PCB.
@@ -150,10 +150,10 @@ Temperature of NEW pcb was measured on critical places like XL6006, inductor, LE
     <table>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/OrigoLight.jpg?raw=true" width="400">
+        	    <img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/OrigoLight.jpg?raw=true" width="400">
       	    </td>
             <td style="padding:10px">
-            	<img src="https://github.com/Joint1k/Tyri_light/blob/main/pics/NewLight.jpg?raw=true" width="400">
+            	<img src="https://github.com/Jend4s/Tyri_light/blob/main/pics/NewLight.jpg?raw=true" width="400">
             </td> 
         </tr>
     </table>
@@ -166,3 +166,5 @@ Temperature of NEW pcb was measured on critical places like XL6006, inductor, LE
 
 # Conclusion
  What say in conclusion? This project was basically spontaneous idea. Because i have this light in my inventory after repair but the emitted light of original LEDs were so weak so i don´t used it. After a year or so i made some cleanup in workshop and i found them. So i made this little project. All this was made in two sleepless nights. In last words i must thanks to [JLCPCB](https://jlcpcb.com/) for quality PCB´s and [LCSC](https://lcsc.com/) for all components.
+ 
+ 
